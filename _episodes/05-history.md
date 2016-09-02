@@ -1,6 +1,6 @@
 ---
 title: Exploring History
-teaching: 25
+teaching: 15
 exercises: 0
 questions:
 - "How can I identify old versions of files?"
@@ -25,7 +25,7 @@ progress by looking, so let's do that using our `HEAD`s.  Before we start,
 let's make a change to `mars.txt`.
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -168,7 +168,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ nano mars.txt
+$ atom mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -334,9 +334,9 @@ moving backward and forward in time becomes much easier.
 >
 > ~~~
 > $ cd planets
-> $ nano venus.txt #input the following text: Venus is beautiful and full of love
+> $ atom venus.txt #input the following text: Venus is beautiful and full of love
 > $ git add venus.txt
-> $ nano venus.txt #add the following text: Venus is too hot to be suitable as a base
+> $ atom venus.txt #add the following text: Venus is too hot to be suitable as a base
 > $ git commit -m "comments on Venus as an unsuitable base"
 > $ git checkout HEAD venus.txt
 > $ cat venus.txt #this will print the contents of venus.txt to the screen
