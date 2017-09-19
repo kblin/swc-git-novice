@@ -19,12 +19,12 @@ keypoints:
 
 Let's create a file called `mars.txt` that contains some notes
 about the Red Planet's suitability as a base.
-(We'll use `atom` to edit the file;
+(We'll use `nano` to edit the file;
 you can use whatever editor you like.
 In particular, this does not have to be the `core.editor` you set globally earlier.)
 
 ~~~
-$ atom mars.txt
+$ nano mars.txt
 ~~~
 {: .bash}
 
@@ -134,7 +134,7 @@ This permanent copy is called a [commit]({{ site.github.url }}/reference/#commit
 We use the `-m` flag (for "message")
 to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
 If we just run `git commit` without the `-m` option,
-Git will launch `atom` (or whatever other editor we configured as `core.editor`)
+Git will launch `nano` (or whatever other editor we configured as `core.editor`)
 so that we can write a longer message.
 
 [Good commit messages][commit-messages] start with a brief (<50 characters) summary of
@@ -191,11 +191,11 @@ and the log message Git was given when the commit was created.
 {: .callout}
 
 Now suppose Dracula adds more information to the file.
-(Again, we'll edit with `atom` and then `cat` the file to show its contents;
+(Again, we'll edit with `nano` and then `cat` the file to show its contents;
 you may use a different editor, and don't need to `cat`.)
 
 ~~~
-$ atom mars.txt
+$ nano mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -352,7 +352,7 @@ First,
 we'll add another line to the file:
 
 ~~~
-$ atom mars.txt
+$ nano mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -600,7 +600,7 @@ repository (`git commit`):
 > >
 > > First we make our changes to the `mars.txt` and `venus.txt` files:
 > > ~~~
-> > $ atom mars.txt
+> > $ nano mars.txt
 > > $ cat mars.txt
 > > ~~~
 > > {: .bash}
@@ -609,7 +609,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .output}
 > > ~~~
-> > $ atom venus.txt
+> > $ nano venus.txt
 > > $ cat venus.txt
 > > ~~~
 > > {: .bash}

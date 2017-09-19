@@ -25,7 +25,7 @@ progress by looking, so let's do that using our `HEAD`s.  Before we start,
 let's make a change to `mars.txt`.
 
 ~~~
-$ atom mars.txt
+$ nano mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -168,7 +168,7 @@ can we restore older versions of things?
 Let's suppose we accidentally overwrite our file:
 
 ~~~
-$ atom mars.txt
+$ nano mars.txt
 $ cat mars.txt
 ~~~
 {: .bash}
@@ -334,9 +334,9 @@ moving backward and forward in time becomes much easier.
 >
 > ~~~
 > $ cd planets
-> $ atom venus.txt #input the following text: Venus is beautiful and full of love
+> $ nano venus.txt #input the following text: Venus is beautiful and full of love
 > $ git add venus.txt
-> $ atom venus.txt #add the following text: Venus is too hot to be suitable as a base
+> $ nano venus.txt #add the following text: Venus is too hot to be suitable as a base
 > $ git commit -m "comments on Venus as an unsuitable base"
 > $ git checkout HEAD venus.txt
 > $ cat venus.txt #this will print the contents of venus.txt to the screen
